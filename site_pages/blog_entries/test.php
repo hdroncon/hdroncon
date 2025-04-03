@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>Henrique Roncon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Henrique,Roncon,engenheiro,mecânico,mechanical,engineer,ufscar,
+                              universidade federal,são carlos,solidworks,matlab,python,office">
+<meta name="description" content="Página de apresentação profissional de Henrique Roncon. Saiba
+                                  mais sobre minha carreira, habilidades e projetos desenvolvidos." />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="../../site_images/favicon.ico">
+<link rel="stylesheet" href="../../site_css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../site_images/profile_pic_temp.png');
+  min-height: 100%;
+}
+
+.red_text {
+  text-decoration: none;
+  color: #c81e1eff;
+}
+
+h1 {
+  font-size: 5em; /* 40px/16=2.5em */
+}
+
+</style>
+<body>
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+    <a href="../../site_pages/servicos.html#blog_entrie_01" class="w3-bar-item w3-right" style="text-decoration:none">Logo</a>
+  </div>
+  
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-red w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+        <h4>Título df sdf sdfg dsf gsdfg df gsdfgdsf gsd fg sfgsdf gs</h4>
+    </div>
+
+    <hr>
+    <div class="w3-container">
+      <h5>Seções</h5>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-hand-o-up" aria-hidden="true"></i>  Intro</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-download" aria-hidden="true"></i>  Download</a><br><br>
+    </div>
+  </nav>
+  
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  
+    <!-- Header -->
+    <header class="w3-container" style="padding-top:22px">
+      <h5><br></h5>
+    </header>
+
+    <div class="w3-row">
+
+        <!-- Article entries -->
+        <div class="w3-col">
+
+
+          <div class="w3-center">
+            <img src="../blog_entries/sign.jpg" alt="Nature" style="width:50%">
+          </div>
+ 
+            <div class="w3-container">
+              <h3><b>TITLE HEADING</b></h3>
+              <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+            </div>
+        
+            <div class="w3-container w3-justify">
+              <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              <div class="w3-row">
+              </div>
+            </div>
+
+            <div class="w3-container">
+              <h4><b>Vídeo</b></h4>
+              <p>Consegue fazer download?</p>
+
+              <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1">
+              </iframe> 
+
+              <p>Se pá.</p>
+              
+            </div>
+
+            <div class="w3-container">
+              <h4><b>Download</b></h4>
+              <p>Consegue fazer download?</p>
+              <p>Se pá.</p>
+              <button class="button button1"><a href="../../site_projects/autonomous_vehicle-master.zip" style="text-decoration:none">Clique para fazer o download do projeto</a> <i class="fa fa-download"></i></button>
+            </div>
+
+            <div class="w3-container">
+              <h4><b>Extras</b></h4>
+              <p>Gostou desse conteúdo?
+              <a style="color:purple; font-weight: bold;" 
+              href=<?php echo file_get_contents("linkpix.txt");?> target="_blank">Fica à vontade pra pagar um café pra gente!</a></p>
+              <p>Entre em <a style="font-weight: bold;" 
+                href="../contato.html" target="_blank">contato</a> e vamos trocar uma ideia sobre esse tópico, 
+                desenvolver uma solução, um produto, juntos ou exclusivo para seu negócio!</p>
+            </div>
+
+
+          <!-- Article done -->
+          
+          <br>
+        
+        </div>
+      </div>
+  
+
+
+  
+    <!-- End page content -->
+  </div>
+  
+  <script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+
+
+  </script>
+
+</body>
+</html>

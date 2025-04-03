@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>Henrique Roncon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Henrique,Roncon,engenheiro,mecânico,mechanical,engineer,ufscar,
+                              universidade federal,são carlos,solidworks,matlab,python,office">
+<meta name="description" content="Página de apresentação profissional de Henrique Roncon. Saiba
+                                  mais sobre minha carreira, habilidades e projetos desenvolvidos." />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="../site_images/favicon.ico">
+<link rel="stylesheet" href="../site_css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../site_images/profile_pic_temp.png');
+  min-height: 100%;
+}
+
+.red_text {
+  text-decoration: none;
+  color: #c81e1eff;
+}
+
+h1 {
+  font-size: 5em; /* 40px/16=2.5em */
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #c81e1eff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(175, 26, 26);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<div class="w3-top" style="z-index: 10;">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="../site_pages/contact.html" class="w3-bar-item w3-button w3-row-padding w3-hide-medium w3-hide-large w3-right" style="margin:4px 30px 0 0" title="Toggle Navigation Menu"><img src="../site_images/uk.png" style="width:22%"></a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="../site_pages/sobre.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SOBRE</a>
+      <a href="../site_pages/timelinebr.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TIMELINE</a>
+      <a href="../site_pages/habilidades.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HABILIDADES & SERVIÇOS</a>
+      <a href="../site_pages/servicos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG & PORTFOLIO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO</a>
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="window.open('../site_docs/Henrique_Roncon_cv_pt.pdf')">CV</a>
+      <a href="../site_pages/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-red w3-right" target="_self">English</a>
+    </div>
+  </div>
+  
+  <!-- NAVBAR EM TELAS PEQUENAS (remover o atributo "onclick" para navbar aparecer sempre logo acima dos links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; z-index: 10;">
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+    <a href="../site_pages/sobre.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SOBRE</a>
+    <a href="../site_pages/timelinebr.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TIMELINE</a>
+    <a href="../site_pages/habilidades.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HABILIDADES & SERVIÇOS</a>
+    <a href="../site_pages/servicos.html" class="w3-bar-item w3-button w3-padding-large">BLOG & PORTFOLIO</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATO</a>
+    <a href="#cvbutton" class="w3-bar-item w3-button w3-padding-large" onclick="window.open('../site_docs/Henrique_Roncon_cv_pt.pdf')">CV</a>
+  </div>
+
+  <nav class="w3-sidebar w3-bottom w3-hide-medium w3-hide-small" style="width:35%; height:100%">
+    <div class="bgimg"></div>
+  </nav>
+
+  
+
+
+
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav> -->
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:35%">
+
+  <!-- Header -->
+  <header class="w3-container w3-content w3-padding-64 w3-center" style="padding:150px 16px" id="home">
+    <p><h2 style="text-align:left"><span class="red_text">Faça contato</span></h2></p>
+    <img src="../site_images/profile_pic_temp.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="../site_images/profile_pic_temp.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+
+
+
+
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:200px">
+        <h3>Telefone</h3><br>
+        <a href="https://api.whatsapp.com/send?phone=5516999755781" target="_blank">
+          <i class="fa fa-whatsapp w3-margin-bottom w3-text-theme" style="font-size:60px"></i></a>
+        <p><a href="https://api.whatsapp.com/send?phone=5516999755781" target="_blank" style="text-decoration: none">(16) 999 755 781</a></p>
+        </div>
+      </div>
+      
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:200px">
+        <h3>LinkedIn</h3><br>
+        <a href="https://www.linkedin.com/in/henriqueroncon" target="_blank">
+          <i class="fa fa-linkedin w3-margin-bottom w3-text-theme" style="font-size:60px"></i></a>
+        <p><a href="https://www.linkedin.com/in/henriqueroncon" target="_blank" style="text-decoration: none">henriqueroncon</a></p>
+        </div>
+      </div>
+      
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:200px">
+        <h3>E-mail</h3><br>
+        <a href="mailto:hdroncon@gmail.com" target="_blank">
+          <i class="fa fa-envelope w3-margin-bottom w3-text-theme" style="font-size:60px"></i></a>
+        <p><a href="mailto:hdroncon@gmail.com" target="_top" style="text-decoration: none">hdroncon@gmail.com</a></p>
+        </div>
+      </div>
+      </div>
+
+
+    <!-- <div class="w3-container w3-content w3-padding-64 w3-center" style="max-width:85%">
+        <div class="container">
+            <form name="contactform" action="../site_php/contactform.php">
+
+            <input type="text" id="fname" name="fname" placeholder="Seu nome*" required>
+        
+            <input type="text" id="eemail" name="eemail" placeholder="Seu email*" required>
+
+            <input type="text" id="telefo" name="telefo" placeholder="Seu telefone">
+                
+            <textarea id="subject" name="subject" placeholder="Escreva algo*" style="height:200px" required></textarea>
+        
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div> -->
+
+  </header>
+
+
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-padding-16 w3-xlarge w3-opacity">
+    <p class="w3-center w3-medium">Encontre-me nas redes sociais.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity" onclick="window.open('https://www.facebook.com/hroncon')"></i>
+    <i class="fa fa-spotify w3-hover-opacity" onclick="window.open('https://open.spotify.com/user/hroncon?si=ig8q9vFVQlwfnytBwphndA')"></i>
+    <i class="fa fa-youtube-play w3-hover-opacity" onclick="window.open('https://www.youtube.com/channel/UCUKn88fbi3BDBjxc4eMCtCg?')"></i>
+    <i class="fa fa-github w3-hover-opacity" onclick="window.open('https://github.com/hdroncon')"></i>
+    <i class="fa fa-linkedin-square w3-hover-opacity" onclick="window.open('https://www.linkedin.com/in/henriqueroncon')"></i>
+    <div class="w3-center w3-medium">
+    <p class="fa fa-copyright" style="width:30px"></p>2021, por Henrique Roncon. Assistido por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>.</br>
+    </div>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Funções para ativar minibars e bandeira de idioma em smartphones
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+</script>
+
+</body>
+</html>

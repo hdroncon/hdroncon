@@ -1,0 +1,11 @@
+setor,tipoRolo,qtdeRolo,custoRolo,tipoBand,qtdeBand,custoBand,tipoA4,qtdeA4,custoA4,tipoEnc,qtdeEnc,custoEnc,custoTotal
+AST,1,3,2.16,0,0,0.0,0,0,0.0,0,0,0.0,2.16
+Compras,0,0,0.0,0,0,0.0,1,4,0.16,0,0,0.0,0.16
+Processo,0,0,0.0,0,0,0.0,0,0,0.0,1,4,5.2,5.2
+AST,0,0,0.0,0,0,0.0,1,5,0.2,0,0,0.0,0.2
+Montagem Eletrica,0,0,0.0,1,5,0.55,0,0,0.0,0,0,0.0,0.55
+Eng Software,0,0,0.0,0,0,0.0,0,0,0.0,1,5,6.5,6.5
+Escolha o setor,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,0.0
+Almox. Central,0,0,0.0,0,0,0.0,1,2,0.08,0,0,0.0,0.08
+AST,0,0,0.0,1,2,0.22,1,4,0.16,0,0,0.0,0.38
+Auto Controle,1,1,0.72,0,0,0.0,0,0,0.0,0,0,0.0,0.72

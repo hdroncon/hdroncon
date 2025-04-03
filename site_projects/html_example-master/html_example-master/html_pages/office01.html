@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Office 01</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../html_images/favicon.ico">
+<link rel="stylesheet" href="../html_css/html_css.css">
+<link rel="stylesheet" href="../html_css/html_theme_css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-themeB w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l6" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-l6"><img src="../html_images/logo.png" height="25" width="25"></a>
+    <a href="indice.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Índice</a>
+    <a href="sobre.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a href="#introducao" class="w3-bar-item w3-button w3-hover-deep-orange">Introdução</a>
+  <a href="#function" class="w3-bar-item w3-button w3-hover-deep-orange">Recurso</a>
+  <a href="#tabela" class="w3-bar-item w3-button w3-hover-deep-orange">Tabela</a>
+  <a href="#slides" class="w3-bar-item w3-button w3-hover-deep-orange">Slides</a>
+  <a href="#documento" class="w3-bar-item w3-button w3-hover-deep-orange">Documentos</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64" id="introducao">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Introdução</h1>
+      <p> 
+          Através do Google Docs, é possível publicar tabelas, documentos ou apresentações
+          de forma embutida na página. Os modelos a seguir são disponibilizados pelo próprio
+          Google.
+      </p>
+      <p> 
+        Fonte: <a href="https://support.google.com/docs/answer/183965?hl=en&visit_id=637040051179507401-3750886479&rd=3" 
+        class="w3-hover-deep-orangeL" target="_blank" style="text-decoration:none">Google Docs.</a>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="w3-row w3-padding-64" id="function">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Recurso</h1>
+      <p>
+          Os exemplos abaixo são apenas demonstrativos, ou seja, não é possível interagir
+          com os arquivos ou editá-los.
+      </p>
+      <p id="tabela">
+          Exemplo de uma tabela.
+      </p>
+      <p>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBik7-6izy1wrWLIve1WGWe_RlgQP5ZfvH0CAfBtjshx_IyTyivzKi_3vcTXRorv23TgZF3q4lOfTa/pubhtml?widget=true&amp;headers=false" height="800" width="700"></iframe>
+      </p>
+      <p id="slides">
+          Exemplo de uma apresentação.
+      </p>
+      <p>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSWjmjR10M-0E9MaEysXmLjnUtQ2S0o6DGsg6RdSysRSxG7pdcb6dqUHBMtdikOJT27yHr5BP4l3qm9/embed?start=false&loop=false&delayms=10000" frameborder="0" height="800" width="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </p>
+      <p id="documento"> 
+          Exemplo de um documento.
+      </p>
+      <p>
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vSLBBwmclMGYrRwJbPvyXDNvsyLobHgUAXfmf3gMKJDJ7C8zw8mL1lRxbphZOUnRDQ79bb40VXWgYqd/pub?embedded=true" height="800" width="700"></iframe>
+      </p>
+    </div>
+  </div>
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-center w3-theme-l8">
+      <p>Auxiliado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    // Aqui se escolhe a coluna que o valor é procurado: [0] -> coluna1.
+    td = tr[i].getElementsByTagName("td")[0]; 
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+</body>
+</html>

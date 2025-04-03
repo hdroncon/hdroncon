@@ -1,0 +1,36 @@
+
+*************************************************
+*						*
+*						*
+*                 INSTRUÇÕES			*
+*						*
+*						*	
+*						*
+*************************************************
+
+0) Verificar e, caso necessário, instalar o 
+compilador Python em seu computador;
+	- em qualquer diretório, pressionar a tecla
+	Shift + botão direito do mouse, selecionar
+	"Abrir janela de comando aqui" e digitar
+	"python -V", sem as aspas.
+	- caso não houver versão instalada, vá até
+	o site oficial python.org e baixe/instale
+	a versão mais recente.
+	- na janela de comando escreva/execute as
+	seguintes linhas de comando:
+		pip install tkintertable
+		pip install datetime
+		pip install reportlab
+		pip install python-csv
+
+		
+1) Em Controle_material_consumo/aplicativo, abra
+uma nova janela de comando (shift + botão direito 
+do mouse e selecione "Abrir janela de comando aqui")
+e digite "python run.py", sem as aspas.
+
+2) Siga as instruções internas do aplicativo.
+2.1) Há também a página 
+Ferramentas do Projeto/Controle do Xerox dentro do
+Padrão Hece com maiores informações sobre a ferramenta.

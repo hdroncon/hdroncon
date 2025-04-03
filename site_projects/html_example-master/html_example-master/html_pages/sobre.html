@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sobre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../html_images/favicon.ico">
+<link rel="stylesheet" href="../html_css/html_css.css">
+<link rel="stylesheet" href="../html_css/html_theme_css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-themeB w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l6" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-theme-l6"><img src="../html_images/logo.png" height="25" width="25"></a>
+    <a href="indice.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Índice</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a href="#introducao" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Introdução</a>
+  <a href="#autoria" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Autoria</a>
+  <a href="#motivacoes" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Motivações</a>
+  <a href="#informacoestecnicas" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Informações Técnicas</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64" id="introducao">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Introdução</h1>
+      <p> 
+        Aqui pretendo explicar os motivos e objetivos pretendidos com este documento. Na seção 
+        <b>Informações Técnicas</b> poderão ser encontradas informações referentes a versão 
+        deste arquivo, atualizações e quaisquer referências que achar pertinente e que não 
+        se encaixam em qualquer outra página.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="autoria">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-deep-orange">Autoria</h1>
+          <p> 
+            Como tratam-se de arquivos públicos e sem qualquer tipo de proteção, muitas são as formas
+            pelas quais você, leitor, pode ter obtido acesso a estes arquivos. Originalmente, estão publicados
+            na minha página do <a href="https://github.com/hdroncon" class="w3-hover-deep-orangeL" 
+            target="_blank">GitHub</a>, onde outros projetos - também de minha autoria - são encontrados,
+            utilizando outros recursos, como <i>Python</i>, <i>LaTeX</i>, <i>MATLAB</i> (...). Caso tenha 
+            recebido os arquivos por outra fonte e quiser saber mais sobre o autor, acesse meu 
+            <a href="http://www.cvhroncon.com.br/" class="w3-hover-deep-orangeL" target="_blank">site</a>,
+            onde poderá encontrar maiores informações sobre mim, Henrique Roncon, ter acesso ao meu
+            currículo em formato PDF, endereço de email e telefone para contato.
+          </p>
+        </div>
+      </div>
+
+  <div class="w3-row w3-padding-64" id="motivacoes">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Motivações</h1>
+      <p> 
+        Como engenheiro mecânico pleno, as habilidades que adiquiri ao longo da graduação
+        não diferem tanto das dos meus outros colegas que também possuem este título de 
+        bacharel. Então, assim como meus colegas de profissão, estou sempre em busca de
+        expandir meus conhecimentos e habilidades afim de não só buscar meu espaço no
+        mercado de trabalho, mas também me manter atualizado e sempre ativo - no que se
+        diz respeito aos estudos de maneira geral. 
+      </p>
+      <p> 
+        Por gostar de tecnologia, robótica e automação, um dos hobbies que desenvolvi
+        foi o de programação. Como se trata de um hobby (com possibilidade de aplicar
+        em situações reais no trabalho), não escrevo rotinas por escrever: gosto de 
+        atingir algum objetivo ou aplicar o que aprendo em algo concreto. Ainda que o 
+        HTML não seja considerado realmente como uma linguagem de programação, este 
+        <i>site</i> é um exemplo disso: aprender a estrutura do HTML por si só, suas 
+        teorias e como ocorre a interação entre o sript e o navegador não me atrai. 
+        Aprender sobre a ferramenta e desenvolver páginas de web a partir disto tem 
+        um propósito para mim. Esta lógica se aplica as outras linguagens ou textos 
+        estruturados que gosto de manipular.   
+      </p>
+      <p> 
+        Pelo ponto de vista profissional, além da busca pela diferenciação de currículo,
+        trato esta apresentação - e todos os projetos disponíveis em minha página do
+        <a href="https://github.com/hdroncon" class="w3-hover-deep-orangeL" 
+        target="_blank">GitHub</a> - como meu portfólio, algo incomum entre os engenheiros.
+
+      </p>
+    </div>
+    <div class="w3-twothird w3-container w3-center">
+        <img src="../html_images/coding.png" style="width:50%">
+        <figcaption>Figura 01 - Motivações.</figcaption>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="informacoestecnicas">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Informações Técnicas</h1>
+      <ul>
+        <li>Os códigos são escritos utilizando o ambiente de desenvolvimento <i>Visual Studio Code</i>.</li>
+        <li>Muitas são as fontes utilizadas para a elaboração do conteúdo aqui mostrado mas a 
+            <a href="https://www.w3schools.com" class="w3-hover-deep-orangeL" target="_blank">w3.com</a> é, 
+            disparada, a mais consultada. Os templates aqui utilizados são, inclusive, fornecidos gratuitamente 
+            pelo portal.</li>
+        <li>01.Rev.14.09.19: páginas online.</li>
+      </ul> 
+    </div>
+  </div>
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-center w3-theme-l8">
+      <p>Auxiliado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

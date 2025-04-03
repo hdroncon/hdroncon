@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="html_images/favicon.ico">
+<link rel="stylesheet" href="html_css/html_css.css">
+<link rel="stylesheet" href="html_css/html_theme_css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-themeB w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l6" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l6"><img src="html_images/logo.png" height="25" width="25"></a>
+    <a href="html_pages/indice.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Índice</a>
+    <a href="html_pages/sobre.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sobre</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a href="#introducao" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Home</a>
+  <a href="#funcionalidades" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Funcionalidades</a>
+  <a href="#mapadosite" class="w3-bar-item w3-button w3-hover-deep-orange" href="#">Mapa do site</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64" id="introducao">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Home</h1>
+      <p> 
+        De modo a aplicar os conhecimentos em HTML, testar funcionalidades e recursos da ferramenta, 
+        bem como simular de fato a arquitetura de um site comum, uma série de páginas foram criadas
+        com a finalidade de, em cada uma delas, explorar algum destes recursos. Verifique logo abaixo, 
+        em <b>Mapa do Site</b>, o que é possível encontrar neste documento.
+      </p>
+    </div>
+    <div class="w3-twothird w3-container w3-center">
+      <img src="html_images/logo.png" style="width:20%">
+      <figcaption>LOGO</figcaption>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="funcionalidades">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Funcionalidades</h1>
+      <p> 
+        Todas as páginas são responsivas de alguma forma. O Logo, situado no canto superior esquerdo
+        de todas as páginas, quando clicado leva o usuário de volta a página de ínicio, <b>Home</b>.
+        Por se tratar de um laboratório onde cada página tende a ser única e explorar algum recurso,
+        botões de vários tipos, <i>sliders</i>, formulários, entre outros mecanismos serão demonstrados.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="mapadosite">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-deep-orange">Mapa do Site</h1>
+      <p>
+        Na Figura 01 é possível entender melhor a disposição das páginas, onde encontrá-las e o que 
+        nelas contêm. Através do <b>Índice</b> é possível acessar e verificar, por exemplo, recursos 
+        relacionados a arquivos <i>csv</i> ou <i>PDF</i>, entre outros. Em <b>Sobre</b> são encontradas
+        informações adicionais a respeito deste documento.
+      </p>
+    </div>
+    <div class="w3-twothird w3-container w3-center">
+      <img src="html_images/flowchart.png" style="width:100%">
+      <figcaption>Figura 01 - Mapa do site.</figcaption>
+    </div>
+  </div>
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-center w3-theme-l8">
+      <p>Auxiliado por <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
