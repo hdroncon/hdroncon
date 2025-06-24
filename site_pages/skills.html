@@ -3,333 +3,231 @@
 <title>Henrique Roncon</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Henrique,Roncon,engenheiro,mecânico,mechanical,engineer,ufscar,
-                              universidade federal,são carlos,solidworks,matlab,python,office">
-<meta name="description" content="This is the Henrique Roncon's professional website. Read
-                                    more about my career, skills and projects done." />
+<meta name="keywords" content="Henrique,Roncon,data analyst,python,office,powershell">
+<meta name="description" content="Henrique Roncon personal web page. Know about me, my
+                                  career and projects I do." />
 <meta name="robots" content="index, follow" />
 <link rel="icon" href="../site_images/favicon.ico">
-<link rel="stylesheet" href="../site_css/w3.css">
+<link rel="stylesheet" href="../site_style/hrStyle.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../site_images/profile_pic_temp.png');
-  min-height: 100%;
-}
-
-.red_text {
-  text-decoration: none;
-  color: #c81e1eff;
-}
-
-.transp_text {
-  text-decoration: none;
-  opacity: 0.0001;
-}
-
-h1 {
-  font-size: 5em; /* 40px/16=2.5em */
-}
-
-</style>
 <body>
 
-<!-- Sidebar with image -->
-<div class="w3-top" style="z-index: 10;">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="../site_pages/habilidades.html" class="w3-bar-item w3-button w3-row-padding w3-hide-medium w3-hide-large w3-right" style="margin:4px 30px 0 0" title="Toggle Navigation Menu"><img src="../site_images/brazil.png" style="width:22%"></a>
-      <a href="../index_eng.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="../site_pages/about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-      <a href="../site_pages/timelineeng.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TIMELINE</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SKILLS & SERVICES</a>
-      <a href="../site_pages/services.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG & PORTFOLIO</a>
-      <a href="../site_pages/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="window.open('../site_docs/Henrique_Roncon_cv_eng.pdf')">CV</a>
-      <a href="../site_pages/habilidades.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-red w3-right" target="_self">Portuguese</a>
-    </div>
-  </div>
-  
-  <!-- NAVBAR EM TELAS PEQUENAS (remover o atributo "onclick" para navbar aparecer sempre logo acima dos links) -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; z-index: 10;">
-    <a href="../index_eng.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-    <a href="../site_pages/about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
-    <a href="../site_pages/timelineeng.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TIMELINE</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKILLS & SERVICES</a>
-    <a href="../site_pages/services.html" class="w3-bar-item w3-button w3-padding-large">BLOG & PORTFOLIO</a>
-    <a href="../site_pages/contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-    <a href="#cvbutton" class="w3-bar-item w3-button w3-padding-large" onclick="window.open('../site_docs/Henrique_Roncon_cv_eng.pdf')">CV</a>
-  </div>
-
-  <nav class="w3-sidebar w3-bottom w3-hide-medium w3-hide-small" style="width:35%; height:100%">
-    <div class="bgimg"></div>
-  </nav>
-
-  
-
-
-
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<!-- <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
+<!-- Navbar -->
+<div class="topnav" id="myTopnav">
+  <a href="../index.html">Home</a>
+  <a href="#" class="active">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
   </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav> -->
-
+</div>
+  
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:35%">
+<div class="main-content">
 
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:150px 16px" id="home">
-    <p><h2 style="text-align:left"><span class="red_text">Professional skills</span></h2></p>
-    <img src="../site_images/profile_pic_temp.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="../site_images/profile_pic_temp.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  <div class="column-type column-50_a" id="home">
 
+      <p><span class="custom-text-04">
+        Skills
+      </span></p>  
 
-            <div class="w3-center">
-                <div class="w3-bar w3-theme">
-                <button class="w3-bar-item w3-button testbtn w3-padding-16 fa fa-comment-o fa-3x" onclick="openHabs(event,'idiomas')"></button>
-                <button class="w3-bar-item w3-button testbtn w3-padding-16 fa fa-wrench fa-3x" onclick="openHabs(event,'ferr')"></button>
-                <button class="w3-bar-item w3-button testbtn w3-padding-16 fa fa-code fa-3x" onclick="openHabs(event,'prog')"></button>
-                <button class="w3-bar-item w3-button testbtn w3-padding-16 fa fa-plus fa-3x" onclick="openHabs(event,'oth')"></button>
-                </div>
-                
-                <div id="idiomas" class="w3-container habs w3-animate-opacity">
-                <h2>Languages</h2>
-                <p class="w3-center">
-                  <ul>
-                    <li>Native <b>Portuguese</b>.</li>
-                    <br>
-                    <li><b>English</b>, proficiency certified by the English 
-                      as a Second Language Academy - University of Colorado, Denver, USA.</li>
-                    <br>
-                    <li><b>Spanish</b> -  intermediate communication skills.</li>
-                  </ul></p>
-                </div>
-                
-                <div id="ferr" class="w3-container habs w3-animate-opacity">
-                <h2>Tools</h2>
-                <p class="w3-center">
-                  <ul>
-                    <li>Able to create parts, mechanisms, assemblies and techical drawings in 
-                      <b>SolidWorks & PDM</b> and <b>Siemens NX/UG</b>.</li>
-                      <br>
-                    <li><b>AutoCAD</b>, also for parts, assemblies and technical drawings. Can elaborate
-                    cut models too.</li>
-                      <br>
-                    <li>Capable of calculus scrip development in <b>MATLAB</b>,
-                      applying mathematical methods to create simple simulations.</li>
-                  </ul>  
-                </p>
-                </div>
-                
-                <div id="prog" class="w3-container habs w3-animate-opacity">
-                <h2>Programming</h2>
-                <p class="w3-center">
-                  <ul>
-                    <li><b>Octave</b>, used to write the MATLAB scripts.</li>
-                    <br>
-                    <li><b>Python</b>, applied in task automation and personal projects
-                      like microcontroller programming, csv data manipulation
-                      and development of interactive apps (GUI).</li>
-                      <br>
-                    <li><b>Ladder</b>, used,
-                      basically, with Programmable Logic Controllers (PLC).</li>
-                      <br>
-                    <li><b>SQL</b> embedded in python scripts to manipulate data 
-                      using database management systems (<b>DBMS</b>) such as 
-                        <b>SQLite</b> and <b>MySQL</b>.</li>
-                  </ul></p>
-                </div>
+      <div class="button-pages-container">
+        <button class="button-skill active" onclick="openTabs(event,'idioms')">Idioms</button>
+        <button class="button-skill" onclick="openTabs(event,'tools')">Tools</button>
+        <button class="button-skill" onclick="openTabs(event,'prog')">Programming</button>
+        <button class="button-skill" onclick="openTabs(event,'others')">Others</button>
+      </div>
 
-                <div id="oth" class="w3-container habs w3-animate-opacity">
-                <h2>Others</h2>
-                <p class="w3-center">
-                  <ul>
-                    <li><b>Microsoft Office</b>, with experience in <b>Powerpoint</b>, 
-                      <b>Word</b> and <b>Excel</b>, having practice with <b>Macro/VBA</b>.</li>
-                      <br>
-                    <li><b>Power BI</b> and <b>DAX</b>, capable of
-                      create connections with databases and CSV files to develop
-                      interactive data charts.</li>
-                      <br>
-                    <li><b>Inkscape</b>, capable of
-                      noncomplex artistic creation, using vectors and layer
-                      functionalities.</li>
-                      <br>
-                    <li><b>LaTeX</b>, used to produce and generate high quality 
-                      professional documents like articles, reports and technical manuals.</li>
-                      <br>
-                    <li><b>HTML</b>, <b>CSS</b>, <b>PHP</b> and
-                      <b>Javascript</b>: enough to implement tools and make responsive
-                      pages that can be used for documentation or source of many
-                      kinds of information. </li>
-                  </ul>  
-                  </p>
-                </div>
-            </div>
+      <div class="tabs-skill" id="idioms" style="display: block; color: white;">
+        <br>
+        <p>
+          I'm brazilian, so Portuguese is my mother language.
+        </p>
+        <br>
+        <p>
+          English is my second language, I studied at the English
+          as a Second Language school at the University of Colorado (UC),
+          in Denver, USA. There, at the UC, I have also completed one year
+          of my undergrad course in Mechanical Engineering.
+        </p>
+        <br>
+        <p>
+          I can't say I'm fluent, but my Spanish is good.
+        </p>
+      </div>
 
-  </header>
+      <div class="tabs-skill" id="tools" style="color: white;">
+        <br>
+        <p>
+          Since 2024 I'm working constantly with the <b>Azure</b> environment.
+          Deploying <b>Web Apps</b>, <b>Functions</b>, <b>Databases</b> and
+          many other resources - keeping track of their costs - is everydays
+          work.
+        </p>
+        <br>
+        <p>
+          For data analysis, <b>PowerBI</b> is my go to. For data handling,
+          preparation and tests, I like to use <b>Bruno</b> for API quick
+          calls and <b>Spoon</b> for ETL - even though most of the time I
+          do these processess using Python or Shell scripts.
+        </p>
+        <br>
+        <p>
+          As a mechanical engineer, I have worked a lot with <b>Solidworks
+          & PDM</b>. In my experiences, <b>AutoCAD</b> and <b>MATLAB</b>
+          were tools I've used quite frequently too.
+        </p>
+      </div>
 
-  <hr>
+      <div class="tabs-skill" id="prog" style="color: white;">
+        <br>
+        <p>
+          I'm comfortable writing <b>Python</b> and <b>PowerShell</b>
+          scripts, automate anything I can with them is not only my day
+          job, but something I <i>really</i> like to do.
+        </p>
+        <br>
+        <p>
+          As I have to deal a lot with databases, I write <b>SQL</b> on
+          a daily basis. Exploring the Azure resources, I've been writing
+          some lines of <b>NoSQL</b> and <b>TQL</b> too.
+        </p>
+        <br>
+        <p>
+          To create frontend web apps, I use <b>HTML</b>, <b>CSS</b> and 
+          <b>Javascrip</b>. I'm far from be the best with them, but I manage
+          to get good enough results.
+        </p>
+      </div>
 
-  <header class="w3-container w3-center" style="padding:10px 16px" id="home">
-    <p><h2 style="text-align:left"><span class="red_text">Services</span></h2></p>
-
-<!-- First -->
-<div class="w3-row-padding w3-center w3-margin-top">
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Web Design</h3><br>
-  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Simple web site development</p>
-  <p>Customizable to your needs</p>
-  <p>HTML, CSS, Javascript and PHP</p>
+      <div class="tabs-skill" id="others" style="color: white;">
+        <br>
+        <p>
+          I've been using <b>Microsoft Suite</b> for some time now. Beside
+          the main services, I like to create smaller or concept apps using
+          <b>Power Apps</b>. Some processess I like to use <b>Power Automate</b>,
+          because it has native integrations with other MS apps, like <b>Teams</b>
+          and <b>Outlook</b>.
+        </p>
+        <br>
+        <p>
+          Consuming API's is another common task for me. Currently, I'm exploring
+          extensively the <b>Microsoft Graph</b> and the <b>ServiceNow</b> API's
+          to do a wide range of automations.
+        </p>
+        <br>
+        <p>
+          To document things, whenever I can, I tend to use <b>LaTeX</b>. I think
+          it looks way more professional and the results are previsible. 
+        </p>
+        <br>
+        <p>
+          Creating many frontend apps, I (was forced to) develop some artistics
+          skills too. I use <b>Inkscape</b> to work with graphics and images. 
+        </p>
+      </div>
+      
   </div>
-  </div>
+
+  <div class="column-type column-50_b">
+
+      <p><span class="custom-text-07">
+        Services
+      </span></p>
+
+      <div class="card-grid-services">
+        <div class="card-services">
+          <p><span class="custom-text-08">Web design</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Static web sites
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Custom layouts
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Infrastructure setup
+          </span></p>
+        </div>
+        <div class="card-services">
+          <p><span class="custom-text-08">Automation</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Repetitive task automation
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Azure Functions
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Power Automate scripts
+          </span></p>
+        </div>
+        <div class="card-services">
+          <p><span class="custom-text-08">Dashboards</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Power BI reports
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Database integration
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Data cleaning
+          </span></p>
+        </div>
+        <div class="card-services">
+          <p><span class="custom-text-08">Analytics</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Data analysis
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Meaningful insights
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Data driven solutions
+          </span></p>
+        </div>
+        <div class="card-services">
+          <p><span class="custom-text-08">Processess</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Review and optimization
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Spot bottlenecks
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Automate tasks
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Implement apps
+          </span></p>
+        </div>
+        <div class="card-services">
+          <p><span class="custom-text-08">Documentation</span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Formalize processess
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Professionalize departments
+          </span></p>
+          <p><span class="custom-text-09">
+            &#x2022; Spread and retain business knowledge
+          </span></p>
+        </div>
+      </div>
   
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Excel</h3><br>
-  <i class="fa fa-table w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Workbook development</p>
-  <p>Interactive and responsive environments</p>
-  <p>VBA apps</p>
   </div>
-  </div>
-  
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Programming</h3><br>
-  <i class="fa fa-code w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Task automation</p>
-  <p>Custom app development</p>
-  <p>Python, Octave and SQL</p>
-  </div>
-  </div>
+
 </div>
 
-<!-- First -->
-<div class="w3-row-padding w3-center w3-margin-top">
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Engineering</h3><br>
-  <i class="fa fa-cogs w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Basic mechanical projects</p>
-  <p>Mechanical elements digitalization into CAD</p>
-  <p>Math check and general project verification</p>
-  </div>
-  </div>
-  
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Dashboard</h3><br>
-  <i class="fa fa-tachometer w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Dashboard development</p>
-  <p>Interactive apps, database supported</p>
-  <p>Automatic statistical analysis</p>
-  <p>Desktop app or web app</p>
-  </div>
-  </div>
-  
-  <div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Documentation</h3><br>
-  <i class="fa fa-file-pdf-o w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Template creation for documents</p>
-  <p>Supported formats like MS Word or, for more professional styles, LaTeX</p>
-  <p>Text elaboration in general</p>
-  </div>
-  </div>
-</div>
+<footer class="footer-content">
+  <p>
+    2025, developed by <b>InovaHR</b>.
+  </p>
+</footer>
 
-<br><br><br><br>
-
-<div class="w3-center">
-  <button class="button button1"><a href="../site_pages/services.html" style="text-decoration:none">Take a loot at my portfolio</a> <i class="fa fa-history"></i></button> 
-  <button class="button button1"><a href="../site_pages/contact.html" style="text-decoration:none">Get in touch</a> <i class="fa fa-paper-plane"></i></button>
-
-</div>
-
-<br><br><br>
-   
-
-  </header>
-
-
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-center w3-padding-16 w3-xlarge w3-opacity">
-    <p class="w3-center w3-medium">Find me on the social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity" onclick="window.open('https://www.facebook.com/hroncon')"></i>
-    <i class="fa fa-spotify w3-hover-opacity" onclick="window.open('https://open.spotify.com/user/hroncon?si=ig8q9vFVQlwfnytBwphndA')"></i>
-    <i class="fa fa-youtube-play w3-hover-opacity" onclick="window.open('https://www.youtube.com/channel/UCUKn88fbi3BDBjxc4eMCtCg?')"></i>
-    <i class="fa fa-github w3-hover-opacity" onclick="window.open('https://github.com/hdroncon')"></i>
-    <i class="fa fa-linkedin-square w3-hover-opacity" onclick="window.open('https://www.linkedin.com/in/henriqueroncon')"></i>
-    <div class="w3-center w3-medium">
-    <p class="fa fa-copyright" style="width:30px"></p>2021, by Henrique Roncon. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>.</br>
-    </div>
-  <!-- End footer -->
-  </footer>
-  
 <!-- END PAGE CONTENT -->
-</div>
 
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Funções para ativar minibars e bandeira de idioma em smartphones
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Tabs
-function openHabs(evt, habsName) {
-  var i;
-  var x = document.getElementsByClassName("habs");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-madeup-red", "");
-  }
-  document.getElementById(habsName).style.display = "block";
-  evt.currentTarget.className += " w3-madeup-red";
-}
-
-var mybtn = document.getElementsByClassName("testbtn")[0];
-mybtn.click();
-
-
-</script>
 
 </body>
+<script src="../site_style/hrEngine.js"></script>
 </html>

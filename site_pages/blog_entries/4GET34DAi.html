@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<title>Efficient Applications and Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Henrique,Roncon,data analyst,python,office,powershell">
+<meta name="description" content="Henrique Roncon personal web page. Know about me, my
+                                  career and projects I do." />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="../../site_images/favicon.ico">
+<link rel="stylesheet" href="../../site_style/hrStyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar -->
+<div class="topnav" id="myTopnav">
+  <a href="../../site_pages/projects.html">Projects</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+<!-- Page Content -->
+<div class="main-content">
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="blog-modal-background" onclick="this.style.display='none'">
+    <span class="close-blog-modal">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="blog-modal-content">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+
+
+  <div class="column-type column-100" id="home" style="color: white; padding: 50px 300px; line-height: 1.6;">
+
+    <div style="display: block; align-items: center;">
+      <span style="font-size: 3em;"><p>
+        Efficient Applications and Solutions
+      </p></span>
+      <span style="font-size: 2em;"><p>
+        Henrique Roncon
+      </p></span>
+      <span style="font-size: 1.5em;"><p>
+        June/2023
+      </p></span>
+      <p>
+        <i>#python #gui #ui #sql #database #html #javascript</i>
+      </p>
+    </div>
+    <br><br>
+
+    <div id="effapps" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Efficient Applications and Solutions
+      </p></span>
+      <p>
+        Developing robust applications is not currently part of my day-to-day activities, and it's not a subject I'm well-versed in, so I can't go into great detail as the risk of making mistakes is high. However, it's an area I have a lot of interest in, and I try to absorb knowledge from articles I read whenever possible.
+      </p>
+      <p>
+        Even though I lack deep technical knowledge of the terminology, applications, and the true scope of the field, it's a fact that I enjoy applications, automation, problem-solving, and programming. Regardless of how simple and quick a task may be, if I understand that it's possible to automate that activity - whether to make the process even faster, standardize it, or simply reduce/eliminate the need for user interaction to prevent data entry errors - I believe it's worth dedicating time to automate it or, at the very least, create methods that facilitate user input.
+      </p>
+    </div>
+    <br><br>
+
+    <div id="deffpath" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Defining Paths
+      </p></span>
+      <p>
+        The development of graphical user interfaces (<b>GUI</b>) has been an area of interest for me for some time. Creating calculation routines and methods has been relatively straightforward and familiar tasks, but making the use of these resources user-friendly and independent of minimal knowledge of a particular software has always been a challenge. The initial steps were taken with <b>Excel/VBA</b>, which works reasonably well in this scope but has limitations due to the simple fact that it is not software designed for this purpose. Since I have some knowledge of <b>Python</b>, I explored the <b>Tkinter</b> library, which is intended for GUI development and serves its purpose well, but I was not entirely satisfied with its visual limitations. In this same vein, we have the excellent <b>PyQT</b> and <b>PySide</b> libraries, although I didn't venture into them at the time due to not fully understanding the legal means of distributing applications developed with them. Nowadays, these legal issues seem clearer to me, and I intend to use them in the near future.
+      </p>
+      <p>
+        In this project, I focused on the intersection of <b>CSS</b>, <b>HTML</b>, <b>Javascript</b>, and <b>Python</b> through the <b>Eel</b> library. While my knowledge of <i>front-end</i> technologies is quite limited, it's not (so) difficult to find resources on the internet for developing responsive websites. Moreover, the visual presentation that these tools offer is very appealing. Using Eel was a great choice to test (and improve) my skills in these web development tools, combined with Python, which I'm also quite comfortable with.
+      </p>
+    </div>
+    <br><br>
+
+    <div id="budgetapp" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Budgeting App
+      </p></span>
+      <p>
+        In this application, I developed a user-friendly graphical interface for creating quotes - in this case, for vehicle sales. The process, which offers a high degree of customization in terms of option selection, becomes standardized and makes it easy to navigate through the stages of defining the package. Furthermore, the automatic generation of the quote itself eliminates the need for any calculations on the part of the estimator.
+      </p>
+      <p>
+        In the main column, you first need to choose the vehicle <b>Model</b> from the four available options.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_01.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Available models</figcaption>
+      </div>
+      <br>
+
+      <p>
+        The <b>Accessories</b> are also four - <b>Steering Assistant</b>, <b>Braking Assistant</b>, <b>Automatic Transmission</b>, and <b>Hybrid Mode</b>. These can be combined in any way, as the selection boxes are independent.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_02.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Acessories</figcaption>
+      </div>
+      <br>
+
+      <p>
+        In order to implement more responsive features available in HTML, I created a second section for additional options. Here, you can choose the <b>level of darkness</b> for the window film, the <b>radio model</b>, and whether you want to test the vehicle on a racetrack (<b>track day</b>). For the radio, the default option is '<b>Padrão/Default</b>', and to change it, you need to check the respective selection box. If you choose a different model from the default and then uncheck the box, the model automatically reverts to the default option.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_03.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Complementary acessories</figcaption>
+      </div>
+      <br>
+
+      <p>
+        Similar to the vehicle model, in the <b>Packages</b> section, you can choose only one of the services offered in the application.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_04.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Packages</figcaption>
+      </div>
+      <br>
+
+      <p>
+        Finally, <b>Customer Information</b> is required. There is an <b>Observations</b> field where the customer can write relevant notes about the request. Additionally, the <b>Name</b>, <b>Email</b>, and <b>Phone Number</b> are also requested so that the quote can be specifically directed to this customer, and they can be contacted in the future if necessary. After reviewing all the information, simply press the <b>Generate Invoice</b> button to create the document with the page's information.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_05.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Client information</figcaption>
+      </div>
+      <br>
+
+      <p>
+        The quotes are automatically saved in the <i>\web\invoice</i> directory with sequential nomenclature. At the top of the document, we have the header with general information and the document date.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_06.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Quote header</figcaption>
+      </div>
+      <br>
+
+      <p>
+        Next, the items in the quote are itemized, along with the value associated with each of the accessories chosen through the application.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_07.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Discretization of quote values</figcaption>
+      </div>
+      <br>
+
+      <p>
+        Finally, the observations entered during the quote creation are displayed below the budget value table.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/4GET34DA_08.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Quote observations</figcaption>
+      </div>
+      <br>
+
+    </div>
+    <br><br>
+
+    <div id="consid" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Considerations
+      </p></span>
+      <p>
+        I'm still getting the hang of this blog's dynamics. In this post, I tried to explain the project in a general way, its purpose, and its application. In a parallel post, I delve into the technical aspects of what was done, the code, the logic, which will help me document this project and may serve as a source of information for my future work or for others as well. <a style="color:red; font-weight: bold;" href="#s04" style="text-decoration:none">This post can be read here...</a>
+      </p>
+      <p>
+        One of the main points of this application is that, among the inherent <b>CRUD</b> (Create, Read, Update, Delete) operations in databases, it only covers Create and Read. It's not possible to update or delete quotes. Since the database handling is a secondary factor in this project, I consider myself satisfied with this point.
+      </p>
+      <p>
+        Another focus here was on the automatic creation of a PDF file containing the database information. The library I decided to explore for this was <b>FPDF</b>, which has clear documentation and straightforward usage.
+      </p>
+      <p>Some points for future improvements:
+        <ol>
+          <li>add a field to display the percentage chosen for the darkness level of the window tint.</li>
+          <li>limit the number of characters in the Notes, Name, Email, and Phone fields and make them mandatory.</li>
+          <li>allow only numbers in the Phone field and check if the Email is valid (by checking if the field contains "@" or ends with ".com" or ".com.br," for example).</li>
+          <li>a warning window if the quote was generated or if there was an error.</li>
+        </ol> 
+      </p>
+
+    </div>
+    <br><br>
+
+    <div id="extra" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Extras
+      </p></span>
+      <p>
+        <a style="color:red; font-weight: bold;" href="../../site_projects/4GET34DA.zip" style="text-decoration:none">Download this project by clicking here.</a> To run the application, simply execute the <i>script.py</i> file in the root folder, remembering that the <b>eel</b>, <b>sqlite3</b>, and <b>fpdf</b> modules are used, so they need to be installed as well.
+      </p>
+      <p>
+        <a style="font-weight: bold;" href="../contato.html" target="_blank">Get in touch</a>, and let's discuss this topic, develop a solution, a product, together or exclusively for your business!
+      </p>
+      
+    </div>
+    <br><br>
+
+    <div id="fonts" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Sources
+      </p></span>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.ibm.com/topics/software-development" target="_blank">What is software development?</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.upwork.com/resources/desktop-application-development" target="_blank">What Is Desktop Application Development? Basics & Examples</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.heavy.ai/technical-glossary/graphical-user-interface" target="_blank">Graphical User Interface Definition</a>
+      </p>
+      <p><a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://github.com/python-eel/Eel" target="_blank">Eel Documentation</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://pyfpdf.readthedocs.io/en/latest/" target="_blank">FPDF for Python</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://docs.python.org/3/installing/index.html" target="_blank">Installing Python Modules</a>
+      </p>
+    </div>
+    <br><br>
+
+  </div>
+
+  <footer class="footer-content">
+    <p>
+      2025, developed by <b>InovaHR</b>.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+<script src="../../site_style/hrEngine.js"></script>
+</html>

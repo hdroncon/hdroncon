@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<title>Business Analysis: Northwind Traders</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Henrique,Roncon,data analyst,python,office,powershell">
+<meta name="description" content="Henrique Roncon personal web page. Know about me, my
+                                  career and projects I do." />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="../../site_images/favicon.ico">
+<link rel="stylesheet" href="../../site_style/hrStyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar -->
+<div class="topnav" id="myTopnav">
+  <a href="../../site_pages/projects.html">Projects</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+<!-- Page Content -->
+<div class="main-content">
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="blog-modal-background" onclick="this.style.display='none'">
+    <span class="close-blog-modal">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="blog-modal-content">
+      <img id="img01" style="max-width:100%">
+    </div>
+  </div>
+
+
+  <div class="column-type column-100" id="home" style="color: white; padding: 50px 300px; line-height: 1.6;">
+
+    <div style="display: block; align-items: center;">
+      <span style="font-size: 3em;"><p>
+        Northwind Traders
+      </p></span>
+      <span style="font-size: 2em;"><p>
+        Henrique Roncon
+      </p></span>
+      <span style="font-size: 1.5em;"><p>
+        September/2023
+      </p></span>
+      <p>
+        <i>#powerbi #powerplatform #data #analytics #northwind #traders #microsoft</i>
+      </p>
+    </div>
+    <br><br>
+
+    <div id="bussgoals" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Business and goals
+      </p></span>
+      <p>
+        Business analysis - widely known today, even in Brazil, as Business Intelligence - has its primary goal as understanding a company's past and present through the data it generates, with the help of BI software. While historical analysis is not the primary function of such software, it is through historical analysis that one can identify flaws or bottlenecks in the business, reasons for declining revenue, market comprehension, and trends, among many other factors that, if improved, can potentially bring positive results for the company in the future.
+      </p>
+    </div>
+    <br><br>
+
+    <div id="northwind" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Northwind Traders
+      </p></span>
+      <p>
+        In order to provide a sample database for testing to its users, Microsoft offers the data of the fictional company Northwind Traders in the Access application. In this example, there is information about the products sold by Northwind, data related to purchase orders, inventory, suppliers, customers, employees... a compact database, but with enough inputs for an initial approach to business analysis. In this project, I use PowerBI to retrieve data from this database, define indicators that I believe are relevant to the company, and analyze them, suggesting, through them, improvement opportunities and potential revenue.
+      </p>
+    </div>
+    <br><br>
+
+    <div id="currview" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Current Overview
+      </p></span>
+      <p>
+        Note: The date of the last entry in the <i>orders</i> file was considered the fictitious date of project creation, which is May 6, 1998.
+      </p>
+      <p>
+        As of the present moment, <i>May 6, 1998</i>, we have recorded 270 purchase orders for the year, with revenue of $440,623.87. These sales primarily occurred in Europe (across 15 different countries) and in the United States. However, there were significant sales in South America, such as in Brazil, representing 10.4% of the total purchase orders and 10.2% of the annual revenue – ranking fourth in this list, behind only the United States, Germany, and Austria. The current average order value is $1,631.94. It's also important to note that the sales team is distributed between the United States and the United Kingdom.
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_01.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Charts of purchase orders and revenue by country.</figcaption>
+      </div>
+      <br>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_02.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Distribution of employees by country.</figcaption>
+      </div>
+      <br>
+
+      <p>
+        In total, 16,247 products have been sold so far, with the top three sellers in this period being Konbu (<i>Seafood</i>, ID number 13, 659 units sold), Guaraná Fantástica (<i>Beverages</i>, ID number 24, 546 units sold), and Camembert Pierrot (<i>Dairy</i>, ID number 60, 542 units sold). The top three products leading in revenue are Côte de Blaye (<i>Beverage</i>, accounting for 15.3% of total revenue with 260 units sold), Thüringer Rostbratwurst (<i>Meat</i>, responsible for 7.6% of revenue with 318 units sold), and Raclette Courdavault (<i>Dairy</i>, accounting for 6.0% with 513 units sold).
+      </p>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_03.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Unit quantity of products sold</figcaption>
+      </div>
+      <br>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_04.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Total revenue by product.</figcaption>
+      </div>
+      <br>
+
+    </div>
+    <br><br>
+
+    <div id="histanalysis" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Historical analysis
+      </p></span>
+      <p>
+        Taking into consideration all the available data, it is possible to analyze sales information dating back to July 1996. With these resources, we can observe that between the years 1996 and 1997, there was an increase of approximately 168% in the number of purchase orders (from 152 to 408), and revenue increased from $208,083.97 to $617,085.20 - an increase of approximately 196%. The average order value grew by 10.5%, going from $1,368.97 to $1,512.46.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_05.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Sales and revenue history between 1996 and 1997.</figcaption>
+      </div>
+      <br>
+
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_06.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Charts of purchase orders and revenue by country between 1996 and 1997.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        During that period, as shown by the data for the current year, Germany and the United States topped the list of countries that made the most purchases and generated revenue for the company. Brazil ranks third among countries that placed the most purchase orders at Northwind Traders in both years, also accounting for the fifth-highest revenue for the company during that period.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_07.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Charts of purchase orders and revenue by country between 1996 and 1997.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        In terms of products, there was a 166% increase in the overall sales volume (from 9,581 items to 25,489 items sold), with notable jumps of 380% in the number of <i>Grains/Cereal</i> sales (from 549 to 2,636 items), 205% in <i>Confections</i> (from 1,357 to 4,139 items), and 201% in <i>Condiments</i> (from 962 to 2,895 items). The top-selling products were Gorgonzola Telino (<i>Dairy</i>, ID 31, totaling 1,100 units sold during the period and a 48% increase between 1996 and 1997), Gnocchi di Nonna Alice (<i>Grains/Cereals</i>, ID 56, totaling 1,067 units sold during the period and a significant 911% increase between 1996 and 1997), and Camembert Pierrot (<i>Dairy</i>, ID 60, totaling 1,035 units sold during the period and a 79% increase in sales between 1996 and 1997). Revenue in 1996 and 1997 was led by Côte de Blaye (<i>Beverages</i>, accounting for 9% of the revenue during the period), followed by Thüringer Rostbratwurst (<i>Meat</i>, representing 6% of the revenue) and Raclette Courdavault (<i>Dairy</i>, with 5% of the total revenue).
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/5FCZ28EO_11.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>History of sales volume and categories in the period between 1996 and 1997.</figcaption>
+      </div>
+      <br>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_05.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Cadastro/edição de pacientes.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        O cadastro de novos pacientes é feito através do formulário <i>5205-DIY-HRBL2</i> e a edição de dados de um paciente selecionado é realizada através do formulário <i>6388-DIY-HRBL2</i>, seguindo a mesma lógica das <b>Standards</b>.
+      </p>
+      
+      <p>
+        Ao clicar em <i>New sample</i>, o usuário é levado ao formulário <i>5113-DIY-HRBL2</i>, utilizado para cadastrar uma nova amostra de sangue associada àquele paciente. Aqui, é necessário informar a data da coleta, o teste pelo qual a amostra está sendo submetida e o valor do teste – como dica ao usuário, é informado o range de valores normais para o tipo de teste selecionado. Um código (<i>barcode</i>) único é gerado para esta amostra, utilizando a ID da amostra, a data de inserção da amostra no banco de dados, a ID do teste e a ID do paciente. Um dado interessante que não utilizei neste projeto é que o próprio SharePoint grava por si só o usuário que fez a inserção do novo registro no banco de dados através do login no aplicativo, o que permite rastreio eficiente destas inserções.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_06.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Cadastro de nova amostra testada.</figcaption>
+      </div>
+      <br>
+      
+      <p>A aba <i>Historic</i> mostra todas as amostras/testes associadas ao paciente selecionado. É possível, através dos filtros, verificar se há amostras aguardando validação, aprovadas, reprovadas, com resultado normal ou alterado, de acordo com o range aceitável da norma aplicada naquela amostra em específico.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_07.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Histórico de amostras do paciente.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        Clicando no ícone de <i>Print info</i>, o usuário é levado a uma página com layout diferente das demais (formulário <i>389-DIY-HRBL2</i>), onde constam todas as informações da amostra – o responsável pelo teste, quem o validou, se a amostra é válida, o resultado dela além dos dados de quem está gerando o formulário e a própria data de geração. Clicando em <i>Print</i>, é possível imprimir ou salvar em PDF o formulário com tais dados já padronizado em A4.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_08.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Resultado para impressão.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        A fim de criar um método de segurança, todas as amostras lançadas no sistema necessitam ser validadas – de preferência, o usuário que lança não é o mesmo que valida, por questões de verificação e conferência de informações. Assim, na seção <b>Samples</b> são listadas todas as amostras do banco de dados e, através dos filtros, é possível verificar o status destas. Aqui, ao invés do nome, é mais interessante trazer a ID do paciente, para tornar o procedimento, de certa forma, impessoal.
+      </p>
+      
+      <p>
+        <i>Nota: aliado ao registro automático de gravação de usuário pelo SharePoint, é possível analisar indicadores de performance de funcionários, por exemplo.</i>
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_09.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Amostras cadastradas no banco de dados.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        Ao clicar em <i>Approve/Discard</i>, o usuário verifica as informações e aprova ou desaprova a amostra através do formulário <i>5256-DIY-HRBL2</i>. Como o valor do teste já foi informado no momento de cadastro de nova amostra, o usuário aqui apenas confere se o sistema está fazendo o <i>check</i> de maneira correta – o campo <i>Result</i> é automático: ele compara o valor de <i>Test value</i> com o range e retorna <i>Normal</i> se está dentro ou <i>Altered</i> se está fora deste intervalo. O botão <i>Print info</i> leva ao formulário <i>389-DIY-HRBL2</i>.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_10.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Validação de amostras.</figcaption>
+      </div>
+      <br>
+      
+      <p>
+        Os recursos disponibilizados pelo Power Apps focam na interface com o usuário para o input de informações. No entanto, a ferramenta também disponibiliza recursos (limitados) para a apresentação dos dados presentes nos bancos de dados. Na seção <b>Dashboard</b> são colocados alguns exemplos de gráficos possíveis de serem plotados com os recursos nativos do Power Apps. Dependendo de como são escritos, os gráficos são atualizados tão logo novas informações são inseridas no aplicativo – o que também é bem intuitivo e relativamente fácil de ser implementado, uma vez conhecendo os métodos de plotagem.
+      </p>
+      
+      <br>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="blog_images_01-10/6YFQ15VA_11.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
+        <br>
+        <figcaption>Dashboard HR Blood Laboratory.</figcaption>
+      </div>
+      <br>
+
+    </div>
+    <br><br>
+
+    <div id="consid" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Considerações
+      </p></span>
+      <p>
+        Como comentado anteriormente, o aplicativo necessita de uma mínima estrutura para rodar. Aqui, fiz uso de três listas no Sharepoint: patients, samples e tests, com nomes intuitivos e relacionados diretamente às seções explanadas anteriormente. Procurei relacioná-las através de suas IDs, a fim de transitar entre elas sem que precisasse necessariamente realizar a junção delas, ou criar uma única lista compreendendo todas as infos que eu precisava.
+      </p>
+      <br>
+      <p>
+        Todos os recursos utilizados aqui foram a nível de teste de implementação, logo, o aplicativo não está otimizado, inclusive apresenta suas redundâncias. Mas, por mais que seja um ambiente de teste, é válido mencionar que é muito mais recomendado conectar um dashboard desenvolvido em PowerBi com as listas do SharePoint (servindo como database), pela qualidade e quantidade de recursos oferecidos pelo PowerBi, além de ser algo (no caso, a conexão) muito simples de ser feito, o que potencializa muito a visualização e tomadas de decisão baseadadas nas informações alimentadas através do aplicativo.
+      </p>
+      <br>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="#s04">Pretendo documentar um pouco da técnica utilizada na elaboração deste projeto aqui.</a>
+      </p>
+
+    </div>
+    <br><br>
+
+    <div id="extra" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Extras
+      </p></span>
+      <p>
+        Os aplicativos desenvolvidos no Power Apps necessitam do ambiente de desenvolvimento e hospedagem disponibilizado nas contas pagas da Microsoft, logo, não disponibilizarei o arquivo em extensão <i>msapp</i> para download. <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../../site_projects/6YFQ15VA.rar">Aqui, deixarei disponíveis para download as listas utilizadas como banco de dados</a>, bem como um vídeo <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.youtube.com/watch?v=NK7Xbs_Jcmc" target="_blank">mostrando o aplicativo em funcionamento.</a>
+      </p>
+      <br>
+      <p>
+        Entre em <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../contact.html" target="_blank">contato</a> e vamos trocar uma ideia sobre esse tópico, desenvolver uma solução, um produto, juntos ou exclusivo para seu negócio!
+      </p>
+      
+    </div>
+    <br><br>
+
+    <div id="fonts" style="text-align: justify;">
+      <span style="font-size: 2em;"><p>
+        Fontes
+      </p></span>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://learn.microsoft.com/en-us/power-apps/powerapps-overview" target="_blank">What is Power Apps?</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.heavy.ai/technical-glossary/graphical-user-interface" target="_blank">Graphical User Interface Definition</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.labware.com/blog/how-does-a-lims-work" target="_blank">How Does a LIMS Work?</a>
+      </p>
+      <p>
+        <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://interfusaoti.com.br/blog/como-funciona-o-lims/" target="_blank">Saiba como funciona o LIMS e alavanque os resultados do seu laboratório</a>
+      </p>
+    </div>
+    <br><br>
+
+  </div>
+
+  <footer class="footer-content">
+    <p>
+      2025, developed by <b>InovaHR</b>.
+    </p>
+  </footer>
+
+</div>
+
+</body>
+<script src="../../site_style/hrEngine.js"></script>
+</html>
