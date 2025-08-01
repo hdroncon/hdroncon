@@ -56,15 +56,15 @@
         Power Apps
       </p></span>
       <p>
-        I have discussed - and will continue to discuss - in other posts my passion for creating applications and the difficulty in finding resources for designing good user interfaces, or <i>graphical user interfaces</i> (GUIs). In general, the logic of programming, the objectives of applications, are independent of the GUI, so in this part, in the conceptualization and scope definition of the project, I usually don't have any problems. The development of the GUI often becomes the bottleneck in the creation process.
+        I have discussed — and will continue to discuss — in other posts my passion for building applications and the challenges involved in designing good user interfaces, or <i>graphical user interfaces</i> (GUIs). Generally, application logic and objectives are independent of the GUI, so during the conceptualization and scope definition phases of a project, I usually don’t encounter major issues. However, developing the GUI often becomes the bottleneck in the creation process.
       </p>
       <br>
       <p>
-        An interesting option for creating applications is provided by Microsoft, called <b>Power Apps</b>. In a nutshell, this resource (which is paid and available through Microsoft 365 licenses) allows for the (almost) intuitive creation of visually appealing applications that can communicate with external resources (third-party databases) or with Microsoft's own resources, such as <b>Access</b>, <b>Power Automate</b>, and <b>Sharepoint</b>.
+        An interesting option for building applications is provided by Microsoft: <b>Power Apps</b>. In a nutshell, this paid tool (available through Microsoft 365 licenses) allows for the (almost) intuitive creation of visually appealing applications that can interact with external data sources (such as third-party databases) or with Microsoft’s own tools, like <b>Access</b>, <b>Power Automate</b>, and <b>Sharepoint</b>.
       </p>
       <br>
       <p>
-        The creation and editing of applications using the tool provided by Microsoft allow users with little or no experience in programming languages to develop functional programs. This is because the tool's interface is based on visual <i>drag and drop</i> resources and allows for basic connections to databases, such as a simple SharePoint list (which, with many reservations, we could compare to an online Excel spreadsheet). The interface as a whole is user-friendly, and the learning curve is quick. Developers working with this platform can improve and deliver better results in a short amount of time.
+        Power Apps enables users with little or no programming experience to develop functional applications. This is largely due to its visual, <i>drag-and-drop</i> interface and its ability to connect to basic data sources, such as a simple SharePoint list (which can be loosely compared to an online Excel spreadsheet). The overall interface is user-friendly, and the learning curve is relatively quick. Developers using this platform can quickly enhance their skills and deliver better results in a short amount of time.
       </p>
     </div>
     <br><br>
@@ -74,15 +74,15 @@
         LIMS
       </p></span>
       <p>
-        <b>Laboratory Information Management Systems</b> (LIMS) are implemented in various industry segments, with their primary goal being the effective control of laboratory samples and associated data. The importance of a robust and well-implemented LIMS system is enormous. In addition to <b>cost reduction</b> and <b>increased productivity</b> related to sample management processes, <b>quality control</b> and <b>compliance with current standards</b> tend to be more rigorous and satisfactory, which is crucial in sectors such as pharmaceuticals or food.
+        <b>Laboratory Information Management Systems</b> (LIMS) are used across various industry sectors, with their primary goal being the effective management of laboratory samples and associated data. The importance of a robust and well-implemented LIMS cannot be overstated. Beyond <b>reducing costs</b> and <b>increasing productivity</b> in sample management processes, LIMS also enhances <b>quality control</b> and <b>compliance with regulatory standards</b> — a critical factor in industries such as pharmaceuticals and food production.
       </p>
       <br>
       <p>
-        Managing samples with the assistance of LIMS software allows for not only individual sample control but also batch and lot control. For example, it enables tracking large quantities of samples in the event of a recall. It also streamlines the process of generating results, providing efficient access to information for teams that need it for analysis and for clients who need quick access to reports with confidence in the transparency of the information contained therein. Assuring clients that all steps, from sample collection to report issuance, are rigorously controlled positively impacts their experience.
+        Using LIMS software to manage samples enables not only individual sample tracking but also batch and lot control. For instance, it facilitates the tracking of large volumes of samples in the event of a product recall. It also streamlines the generation of results, ensuring fast and efficient access to information for internal teams conducting analyses, as well as for clients who require quick, reliable access to reports. Providing clients with transparency and confidence that every step — from sample collection to report delivery — is rigorously monitored significantly improves their overall experience.
       </p>
       <br>
       <p>
-        Gradually feeding data into the software's databases allows for in-depth analysis of the laboratory's internal procedures over the medium and long term. It helps identify areas where optimization is possible, ensures that the correct tests are being applied to the samples, and enables predictions by outlining trends. In summary, LIMS significantly increases the efficiency and accuracy of laboratory results by standardizing procedures and managing sample data and their dependencies.
+        Gradually feeding data into the system’s databases allows for medium- and long-term analysis of the laboratory’s internal operations. This helps identify areas for optimization, ensures that appropriate tests are being applied to the right samples, and supports predictive insights through trend analysis. In summary, LIMS greatly enhances the efficiency and accuracy of laboratory operations by standardizing procedures and managing data and their interdependencies.
       </p>
     </div>
     <br><br>
@@ -139,79 +139,80 @@
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_05.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Cadastro/edição de pacientes.</figcaption>
+        <figcaption>Add/edit patients.</figcaption>
       </div>
       <br>
       
       <p>
-        O cadastro de novos pacientes é feito através do formulário <i>5205-DIY-HRBL2</i> e a edição de dados de um paciente selecionado é realizada através do formulário <i>6388-DIY-HRBL2</i>, seguindo a mesma lógica das <b>Standards</b>.
+        New patient registration is done through form <i>5205-DIY-HRBL2</i>, and editing the data of a selected patient is carried out using form <i>6388-DIY-HRBL2</i>, following the same logic used in the <b>Standards</b>.
       </p>
-      
+      <br>
       <p>
-        Ao clicar em <i>New sample</i>, o usuário é levado ao formulário <i>5113-DIY-HRBL2</i>, utilizado para cadastrar uma nova amostra de sangue associada àquele paciente. Aqui, é necessário informar a data da coleta, o teste pelo qual a amostra está sendo submetida e o valor do teste – como dica ao usuário, é informado o range de valores normais para o tipo de teste selecionado. Um código (<i>barcode</i>) único é gerado para esta amostra, utilizando a ID da amostra, a data de inserção da amostra no banco de dados, a ID do teste e a ID do paciente. Um dado interessante que não utilizei neste projeto é que o próprio SharePoint grava por si só o usuário que fez a inserção do novo registro no banco de dados através do login no aplicativo, o que permite rastreio eficiente destas inserções.
+        When clicking <i>New sample</i>, the user is taken to form <i>5113-DIY-HRBL2</i>, which is used to register a new blood sample associated with that patient. Here, the user must provide the collection date, the test to which the sample is being submitted, and the test value. As a helpful tip, the normal value range for the selected test type is displayed to the user. A unique <i>barcode</i> is generated for the sample, based on the sample ID, the date the sample was added to the database, the test ID, and the patient ID. An interesting detail I didn’t use in this project is that SharePoint automatically records the user who added the new entry, based on the login used in the app — which allows for efficient tracking of data insertions.
       </p>
       
       <br>
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_06.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Cadastro de nova amostra testada.</figcaption>
+        <figcaption>New sample registered.</figcaption>
       </div>
       <br>
       
-      <p>A aba <i>Historic</i> mostra todas as amostras/testes associadas ao paciente selecionado. É possível, através dos filtros, verificar se há amostras aguardando validação, aprovadas, reprovadas, com resultado normal ou alterado, de acordo com o range aceitável da norma aplicada naquela amostra em específico.
+      <p>
+        The <i>Historic</i> tab displays all samples/tests associated with the selected patient. Using the filters, users can check whether there are samples awaiting validation, approved, rejected, with normal or abnormal results — based on the acceptable range defined by the standard applied to each specific sample.
       </p>
       
       <br>
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_07.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Histórico de amostras do paciente.</figcaption>
+        <figcaption>Pacient test data.</figcaption>
       </div>
       <br>
       
       <p>
-        Clicando no ícone de <i>Print info</i>, o usuário é levado a uma página com layout diferente das demais (formulário <i>389-DIY-HRBL2</i>), onde constam todas as informações da amostra – o responsável pelo teste, quem o validou, se a amostra é válida, o resultado dela além dos dados de quem está gerando o formulário e a própria data de geração. Clicando em <i>Print</i>, é possível imprimir ou salvar em PDF o formulário com tais dados já padronizado em A4.
+        By clicking the <i>Print info</i> icon, the user is taken to a page with a different layout from the others (form <i>389-DIY-HRBL2</i>), which contains all relevant information about the sample — the person responsible for the test, who validated it, whether the sample is valid, its result, as well as details about the user generating the form and the date of generation. Clicking <i>Print</i> allows the form to be printed or saved as a PDF, already formatted for A4.
       </p>
       
       <br>
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_08.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Resultado para impressão.</figcaption>
+        <figcaption>Test ready to be printed.</figcaption>
       </div>
       <br>
       
       <p>
-        A fim de criar um método de segurança, todas as amostras lançadas no sistema necessitam ser validadas – de preferência, o usuário que lança não é o mesmo que valida, por questões de verificação e conferência de informações. Assim, na seção <b>Samples</b> são listadas todas as amostras do banco de dados e, através dos filtros, é possível verificar o status destas. Aqui, ao invés do nome, é mais interessante trazer a ID do paciente, para tornar o procedimento, de certa forma, impessoal.
+        To implement a security measure, all samples entered into the system must be validated — preferably by a different user than the one who registered the sample, for verification and auditing purposes. In the <b>Samples</b> section, all samples in the database are listed, and filters can be used to check their status. Here, instead of displaying the patient’s name, it is preferable to show the patient ID, making the process more neutral and less personal.
       </p>
       
       <p>
-        <i>Nota: aliado ao registro automático de gravação de usuário pelo SharePoint, é possível analisar indicadores de performance de funcionários, por exemplo.</i>
+        <i>Note: Combined with SharePoint’s automatic user logging, this setup enables the analysis of employee performance indicators, for example.</i>
       </p>
       
       <br>
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_09.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Amostras cadastradas no banco de dados.</figcaption>
+        <figcaption>Samples registered in the database.</figcaption>
       </div>
       <br>
       
       <p>
-        Ao clicar em <i>Approve/Discard</i>, o usuário verifica as informações e aprova ou desaprova a amostra através do formulário <i>5256-DIY-HRBL2</i>. Como o valor do teste já foi informado no momento de cadastro de nova amostra, o usuário aqui apenas confere se o sistema está fazendo o <i>check</i> de maneira correta – o campo <i>Result</i> é automático: ele compara o valor de <i>Test value</i> com o range e retorna <i>Normal</i> se está dentro ou <i>Altered</i> se está fora deste intervalo. O botão <i>Print info</i> leva ao formulário <i>389-DIY-HRBL2</i>.
+        When clicking <i>Approve/Discard</i>, the user reviews the information and either approves or rejects the sample via form <i>5256-DIY-HRBL2</i>. Since the test value was already entered during the sample registration, the user here simply checks whether the system is correctly evaluating the result — the <i>Result</i> field is automatic: it compares the <i>Test value</i> with the reference range and returns <i>Normal</i> if it falls within the range, or <i>Altered</i> if it is outside. The <i>Print info</i> button redirects to form <i>389-DIY-HRBL2</i>.
       </p>
       
       <br>
       <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <img src="blog_images_01-10/6YFQ15VA_10.png" onclick="onClick(this)" style="border-radius: 10px; width: 50%; cursor: pointer; transition: 0.3s;">
         <br>
-        <figcaption>Validação de amostras.</figcaption>
+        <figcaption>Sample validation.</figcaption>
       </div>
       <br>
       
       <p>
-        Os recursos disponibilizados pelo Power Apps focam na interface com o usuário para o input de informações. No entanto, a ferramenta também disponibiliza recursos (limitados) para a apresentação dos dados presentes nos bancos de dados. Na seção <b>Dashboard</b> são colocados alguns exemplos de gráficos possíveis de serem plotados com os recursos nativos do Power Apps. Dependendo de como são escritos, os gráficos são atualizados tão logo novas informações são inseridas no aplicativo – o que também é bem intuitivo e relativamente fácil de ser implementado, uma vez conhecendo os métodos de plotagem.
+        Power Apps primarily focuses on providing a user-friendly interface for data input. However, it also offers (limited) functionality for displaying data stored in the databases. In the <b>Dashboard</b> section, a few examples of charts that can be created using Power Apps’ native features are presented. Depending on how the charts are configured, they can automatically update as soon as new data is entered into the application — which is intuitive and relatively simple to implement once you’re familiar with the plotting methods.
       </p>
       
       <br>
@@ -227,19 +228,22 @@
 
     <div id="consid" style="text-align: justify;">
       <span style="font-size: 2em;"><p>
-        Considerações
+        Final thoughts
       </p></span>
       <p>
-        Como comentado anteriormente, o aplicativo necessita de uma mínima estrutura para rodar. Aqui, fiz uso de três listas no Sharepoint: patients, samples e tests, com nomes intuitivos e relacionados diretamente às seções explanadas anteriormente. Procurei relacioná-las através de suas IDs, a fim de transitar entre elas sem que precisasse necessariamente realizar a junção delas, ou criar uma única lista compreendendo todas as infos que eu precisava.
+        As previously mentioned, the application requires a minimal structure to function. In this case, I used three SharePoint lists: patients, samples, and tests, named intuitively and directly related to the sections described earlier. I aimed to link them through their IDs, allowing navigation between them without the need to merge the data into a single list or create a consolidated dataset containing all the necessary information.
       </p>
       <br>
       <p>
-        Todos os recursos utilizados aqui foram a nível de teste de implementação, logo, o aplicativo não está otimizado, inclusive apresenta suas redundâncias. Mas, por mais que seja um ambiente de teste, é válido mencionar que é muito mais recomendado conectar um dashboard desenvolvido em PowerBi com as listas do SharePoint (servindo como database), pela qualidade e quantidade de recursos oferecidos pelo PowerBi, além de ser algo (no caso, a conexão) muito simples de ser feito, o que potencializa muito a visualização e tomadas de decisão baseadadas nas informações alimentadas através do aplicativo.
+        All the features used here were part of a proof of concept, so the application is not optimized and contains some redundancies. Still, even in a test environment, it’s worth noting that it is highly recommended to connect a Power BI dashboard to SharePoint lists (used as a database). Power BI offers a much higher quality and quantity of resources for visualization and analysis. The connection is also very simple to set up, significantly enhancing the visibility of the data and enabling more informed, data-driven decision-making based on the information fed through the application.
       </p>
       <br>
+      
+      <!-- and end with 
       <p>
         <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="#s04">Pretendo documentar um pouco da técnica utilizada na elaboração deste projeto aqui.</a>
       </p>
+      -->
 
     </div>
     <br><br>
@@ -249,11 +253,11 @@
         Extras
       </p></span>
       <p>
-        Os aplicativos desenvolvidos no Power Apps necessitam do ambiente de desenvolvimento e hospedagem disponibilizado nas contas pagas da Microsoft, logo, não disponibilizarei o arquivo em extensão <i>msapp</i> para download. <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../../site_projects/6YFQ15VA.rar">Aqui, deixarei disponíveis para download as listas utilizadas como banco de dados</a>, bem como um vídeo <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.youtube.com/watch?v=NK7Xbs_Jcmc" target="_blank">mostrando o aplicativo em funcionamento.</a>
+        Applications developed in Power Apps require the development and hosting environment provided through Microsoft’s paid accounts. Therefore, I will not make the <i>msapp</i> file available for download. However, <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../../site_projects/6YFQ15VA.rar">I’m sharing the database lists used in the project</a>, as well as <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://www.youtube.com/watch?v=NK7Xbs_Jcmc" target="_blank">a video demo showing the application in action.</a>
       </p>
       <br>
       <p>
-        Entre em <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../contact.html" target="_blank">contato</a> e vamos trocar uma ideia sobre esse tópico, desenvolver uma solução, um produto, juntos ou exclusivo para seu negócio!
+        Feel free to <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="../contact.html" target="_blank">get in touch</a> — let’s chat about this topic, co-develop a solution, or even create a custom product tailored to your business!
       </p>
       
     </div>
@@ -261,7 +265,7 @@
 
     <div id="fonts" style="text-align: justify;">
       <span style="font-size: 2em;"><p>
-        Fontes
+        Sources
       </p></span>
       <p>
         <a style="color:#c81e1e; font-weight: bold; text-decoration:none" href="https://learn.microsoft.com/en-us/power-apps/powerapps-overview" target="_blank">What is Power Apps?</a>
