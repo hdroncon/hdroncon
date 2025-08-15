@@ -274,7 +274,7 @@ i {
 /*-------------------- Services */
 .card-grid-contact {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 colunas iguais */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
   gap: 20px; /* Espaço entre os cartões */
   margin-top: 20px;
 }
